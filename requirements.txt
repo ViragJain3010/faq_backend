@@ -1,0 +1,11 @@
+Django
+djangorestframework
+django-ckeditor
+googletrans
+BeautifulSoup4
+pytest
+pytest-django
+pytest-mock
+pytest-cov
+factory-boy
+django-redis
