@@ -113,6 +113,10 @@ This workflow is designed to be **user-centric**, requiring minimal effort:
 ## Testing
 For running the testcases run `pytest` in the root directory.
 
+## Want to see a Demo?
+
+![FAQ Demo](./asset/demo.mp4)
+
 ## A Note For the Evaluator
 
 As a MERN developer, my primary expertise is in JavaScript technologies. Although Django is relatively new to me, I embraced the opportunity to work with Python, as it was the preferred language for this role. I’ve put in my best effort to deliver a solid solution with the required tech stack, and I’m eager to learn and improve from any feedback you may have. I appreciate your understanding and look forward to any suggestions for further enhancements!
