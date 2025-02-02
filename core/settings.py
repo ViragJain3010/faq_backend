@@ -83,24 +83,14 @@ DATABASES = {
     }
 }
 
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": f"redis://{os.environ.get('REDIS_HOST', 'localhost')}:{os.environ.get('REDIS_PORT', '6379')}/1",
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#             "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
-#             "IGNORE_EXCEPTIONS": True,
-#         }
-#     }
-# }
-
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://default:NtivIbgWXxJEtPuVqFjqEdRacRcNkfGn@autorack.proxy.rlwy.net:54821",
+        "LOCATION": "redis://redis:6379/1", 
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+            "COMPRESSOR": "django_redis.compressors.zlib.ZlibCompressor",
+            "IGNORE_EXCEPTIONS": True,
         }
     }
 }
@@ -156,6 +146,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
