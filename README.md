@@ -79,18 +79,18 @@ python manage.py runserver
 
 ## How It Works  
 
-### 1. Managing FAQs (Admin)  
+#### 1. Managing FAQs (Admin)  
 - Add a new FAQ with an **English question and answer**, then save it.  
 - The answer is automatically translated into supported languages (Hindi, Bengali).  
 - Updating the English content will **re-translate** the other languages automatically.  
 - Not satisfied with the translation? No problem! You can **manually edit** the translated content and save it. This gives you full control while still benefiting from automatic translation. 
 
-### 2. Fetching FAQs (API)  
+#### 2. Fetching FAQs (API)  
 - The FAQs can be retrieved via an API that returns content in multiple languages.
 - If a user requests FAQs in Hindi (`/api/faqs/?lang=hi`), the cached translation is served instantly.  
 - If no cached version exists, the database is queried, ensuring fast performance.  
 
-### 3. Caching & Performance  
+#### 3. Caching & Performance  
 - Translated FAQs are cached for quick retrieval.  
 - If the FAQ is updated, the cache is automatically cleared and refreshed.  
 
