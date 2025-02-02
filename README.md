@@ -115,7 +115,7 @@ For running the testcases run `pytest` in the root directory.
 
 ## Want to see a Demo?
 
-![FAQ Demo](./asset/demo.mp4)
+![FAQ Demo](./asset/demo.gif)
 
 ## A Note For the Evaluator
 
